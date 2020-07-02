@@ -4,6 +4,7 @@ import contributors.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import retrofit2.Retrofit
 import java.util.*
 import java.util.concurrent.atomic.AtomicInteger
 
@@ -12,12 +13,21 @@ fun loadContributorsCallbacks(service: GitHubService, req: RequestData, updateRe
         logRepos(req, responseRepos)
         val repos = responseRepos.bodyList()
         val allUsers = mutableListOf<User>()
+
+        var processedCount: Int = 0
+
+
         for (repo in repos) {
-            service.getRepoContributorsCall(req.org, repo.name).onResponse { responseUsers ->
-                logUsers(repo, responseUsers)
-                val users = responseUsers.bodyList()
-                allUsers += users
-            }
+            service.getRepoContributorsCall(req.org, repo.name)
+                    .onResponse { responseUsers ->
+                        logUsers(repo, responseUsers)
+                        val users = responseUsers.bodyList()
+                        allUsers += users
+                        processedCount++
+                    }
+        }
+        while (processedCount < repos.size) {
+            Thread.yield()
         }
         // TODO: Why this code doesn't work? How to fix that?
         updateResults(allUsers.aggregate())
