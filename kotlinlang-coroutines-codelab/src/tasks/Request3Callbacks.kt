@@ -12,21 +12,19 @@ fun loadContributorsCallbacks(service: GitHubService, req: RequestData, updateRe
     service.getOrgReposCall(req.org).onResponse { responseRepos ->
         logRepos(req, responseRepos)
         val repos = responseRepos.bodyList()
-        val allUsers = mutableListOf<User>()
 
-        var processedCount: Int = 0
-
-
+        val allUsers = Collections.synchronizedList(mutableListOf<User>())
+        val processedCount = AtomicInteger()
         for (repo in repos) {
             service.getRepoContributorsCall(req.org, repo.name)
                     .onResponse { responseUsers ->
                         logUsers(repo, responseUsers)
                         val users = responseUsers.bodyList()
                         allUsers += users
-                        processedCount++
+                        processedCount.incrementAndGet()
                     }
         }
-        while (processedCount < repos.size) {
+        while (processedCount.get() < repos.size) {
             Thread.yield()
         }
         // TODO: Why this code doesn't work? How to fix that?
