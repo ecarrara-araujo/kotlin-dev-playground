@@ -12,7 +12,7 @@ import io.ktor.routing.get
 import io.ktor.server.engine.embeddedServer
 import io.ktor.server.netty.Netty
 
-fun Application.module() {
+fun Application.main() {
     install(DefaultHeaders)
     install(CallLogging)
     install(Routing) {
@@ -20,13 +20,4 @@ fun Application.module() {
             call.respondText("My Example Blog2", ContentType.Text.Html)
         }
     }
-}
-
-fun main() {
-    embeddedServer(
-        factory = Netty,
-        port = 8080,
-        watchPaths = listOf("BlogAppKt"),
-        module = Application::module
-    ).start()
 }
