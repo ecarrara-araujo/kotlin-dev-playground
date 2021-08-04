@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51280fdf-dbab-4238-996a-cb8cdbbbf5f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/kfixture-test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinlang-lab/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinlang-lab/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinlang-lab/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ktor-hello-world/.idea/ktor-hello-world.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinlang-coroutines-codelab/src/tasks/Aggregation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../kotlinlang-coroutines-codelab/src/tasks/Aggregation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinlang-lab/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kotlinlang-lab/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinlang-lab/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinlang-lab/kotlinlang-lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../kotlinlang-lab/kotlinlang-lab.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1mz3LQhrw0eqIgy7gEQWsDidLJJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="kfixture-test.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51280fdf-dbab-4238-996a-cb8cdbbbf5f8" name="Default Changelist" comment="" />
+      <created>1610482536001</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610482536001</updated>
+    </task>
+    <servers />
+  </component>
+</project>
